@@ -24,7 +24,7 @@ jobs:
           SNOW_INSTANCE: ${{ secrets.SNOW_INSTANCE }}
           SNOW_USER: ${{ secrets.SNOW_USER }}
           SNOW_PASSWORD: ${{ secrets.SNOW_PASSWORD }}
-          SNOW_TABLE: ${{ vars.SNOW_TABLE }}
+          SNOW_TABLE: ${{ secrets.SNOW_TABLE }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
