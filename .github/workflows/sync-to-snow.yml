@@ -3,7 +3,10 @@ name: Sync GitHub Issues to ServiceNow
 on:
   issues:
     types: [opened, closed]
-
+    
+permissions:
+     issues: write
+     contents: read
 jobs:
   sync:
     runs-on: ubuntu-latest
